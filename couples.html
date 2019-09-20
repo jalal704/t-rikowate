@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.tricowat{
+ position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+ 
+   background-color:#000000;
+   border:1px solid #c3c3c3;
+ 
+}
+.acheter{
+ position: fixed;
+   top: 78px;
+ 
+  right: 0px
+ 
+}
+
+.tri {
+ letter-spacing: 15px;
+font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+   font-style: italic;
+   font-size: 20px;
+}
+.button {
+ letter-spacing: 5px;
+font-weight: bold;
+  color: black;
+  text-align: center;
+  line-height: 1.8;
+   font-style: italic;
+   font-size: 10px;
+    height: 30px;
+	
+}
+.COUPLES {
+letter-spacing: 15px;
+font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+   font-style: italic;
+   font-size: 20px;
+     border:1px solid #c3c3c3;
+border-radius: 20px;
+color: white;
+ position: fixed;
+   top: 60px;
+  background-color:#000000;
+  right: 430px
+ 
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+body {font-family: Verdana, sans-serif; margin:0}
+
+
+
+/* Slideshow container */
+ .slideshow {
+ position: fixed;
+ width= 200px;
+ height= 200px;
+ display: block;
+   border:2px solid #c3c3c3;
+
+  margin : 100px 330px 10px;
+  background-image: url("");
+border-radius: 10% / 50%;
+}
+
+
+.W1,.W2,.W3,.W4 {                                    
+  width: 300px; 
+  height: 350px;
+   border:2px solid #c3c3c3;
+   border-radius: 30px;
+     position: absolute;
+ margin : 200px 520px 10px;
+}
+.M1,.M2,.M3,.M4{
+  width: 300px;
+  height: 350px;
+   border:2px solid #c3c3c3;
+   border-radius: 30px;
+   position: absolute;
+ margin : 200px 200px 10px;
+   
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ background-color:#000000;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+ 
+ 
+<div class="tricowat">
+    <p class="tri">T-RICOWAT  </p>
+	<button class="COUPLES" >COUPLES</button>
+     <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/homme.html"><button class="button" > Hommes</button></a> 
+	  <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/femme.html"><button class="button" > Femme</button></a>
+	 <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/couples.html"> <button class="button" > Couples</button></a>
+	 
+</div> 
+
+ 
+  <div class="acheter">
+     <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/contact.html"><button class="button" > Contact</button></a>
+   <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/acheter.html"> <button class="button" >Achat</button></a>
+  
+     </div> 
+
+
+
+
+
+<div class="mySlides fade">
+ 
+  <img src="M1.png" class="M1" >
+  <img src="W1.png" class="W1">
+ 
+
+</div>
+<div class="mySlides fade">
+  
+ <img src="M2.png" class="M2" >
+  <img src="W2.png" class="W2">
+  
+</div>
+
+<div class="mySlides fade">
+
+ <img src="M3.png" class="M3" >
+  <img src="W3.png" class="W3">
+  
+</div>
+<div class="mySlides fade">
+
+ <img src="M4.png" class="M4" >
+  <img src="W4.png" class="W4">
+  
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+   
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

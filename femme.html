@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.fix{
+  position: fixed;
+ width= 200px;
+ height= 200px;
+ display: block;
+   border:2px solid #c3c3c3;
+
+  margin : 100px 330px 10px;
+  background-image: url("");
+border-radius: 10% / 50%;
+  }
+  
+  .slider{
+  position: fixed;
+
+ display: block;
+  
+  margin : 150px 700px 10px;
+  width:  200px;
+  height: 200px;
+
+  }
+  .slider1{
+  position: fixed;
+
+ display: block;
+
+  margin : 150px 80px 10px;
+ 
+
+  }
+ 
+ 
+.gal{
+	
+  position: fixed;
+ 
+  margin : 410px 200px 10px;
+  width: 600px;
+  height: 600px;
+ 
+  overflow: auto;
+  }
+ 
+.gallery-item{
+  /* float:left not working in mozilla*/
+  position: relative;
+  
+  display: inline-block;
+  margin: 1%;
+  border:1px solid #c3c3c3;
+border-radius: 20px;
+  
+}
+.tricowat{
+ position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+ 
+   background-color:#000000;
+   border:1px solid #c3c3c3;
+ 
+}
+.acheter{
+ position: fixed;
+   top: 78px;
+ 
+  right: 0px
+ 
+}
+
+.tri {
+ letter-spacing: 15px;
+font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+   font-style: italic;
+   font-size: 20px;
+}
+.button {
+ letter-spacing: 5px;
+font-weight: bold;
+  color: black;
+  text-align: center;
+  line-height: 1.8;
+   font-style: italic;
+   font-size: 10px;
+    height: 30px;
+	background-color#7FFFD4;
+
+ 
+ 
+}
+
+.FEMMES {
+letter-spacing: 15px;
+font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+   font-style: italic;
+   font-size: 20px;
+     border:1px solid #c3c3c3;
+border-radius: 20px;
+color: white;
+ position: fixed;
+   top: 60px;
+  background-color:#000000;
+  right: 430px
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="tricowat">
+    <p class="tri">T-RICOWAT </p>
+	<button class="FEMMES" > FEMMES</button>
+     <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/homme.html"><button class="button" > Homme</button></a> 
+	 <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/femme.html"><button class="button" > Femme</button></a>
+	 <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/couples.html"> <button class="button" > Couples</button></a>
+	 
+</div> 
+
+<div class="fix">
+ 
+  <img id="expandedImg" width="300" height="300" src="G1.png"">
+  
+</div> 
+  <div class="acheter">
+     <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/contact.html"><button class="button" > Contact</button></a>
+   <a href="file:///C:/Users/jalal/Desktop/TRICOWAT/page/acheter.html"> <button class="button" >Achat</button></a>
+  
+</div> 
+  <div class="gal">
+ 		
+	 <div class="gallery-item">
+		           
+         <img src="G1.png" class="img" id="1" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div> 
+      <div class="gallery-item">
+		           
+        <img src="G2.png" class="img" id="2" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div> 
+       <div class="gallery-item">
+		           
+        <img src="G3.png" class="img" id="3" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+      <div class="gallery-item">
+		           
+        <img src="G4.png" class="img" id="4" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+      <div class="gallery-item">
+		           
+        <img src="G5.png" class="img" id="5" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+       <div class="gallery-item">
+		           
+        <img src="G6.png" class="img" id="6" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+       <div class="gallery-item">
+		           
+        <img src="G7.png" class="img" id="7" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+      <div class="gallery-item">
+		           
+        <img src="G8.png" class="img" id="8" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+
+      <div class="gallery-item">
+		           
+        <img src="ww2.png" class="img" id="9" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+
+      
+     <div class="gallery-item">
+		           
+        <img src="WW3.png" class="img" id="10" width="100" height="100"  onclick="myFunction(this)" >
+        
+	  </div>
+
+	 </div> 
+	 
+	 <div class="slider">
+
+        <div id="img">
+      <img src="WW1.png" >
+       </div>
+
+      </div>
+	 
+	  <div class="slider1">
+
+        <div id="img1"  >
+      <img src="MM1.png"  >
+       </div>
+
+        </div>
+	 
+	 
+	 
+	 
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+ 
+  expandImg.src = imgs.src;
+
+  expandImg.parentElement.style.display = "block";
+}
+
+
+
+ var images = ['WW4.png', 'WW3.png', '/WW2.png', 'WW1.png'];
+
+    var x = 0;
+
+    var imgs = document.getElementById('img');
+
+    setInterval(slider, 3000);
+
+
+    function slider() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + "  > ";
+
+
+    }
+
+var images = ['MM4.png', 'MM3.png', 'MM2.png', 'MM1.png'];
+
+    var x = 0;
+
+    var imgss = document.getElementById('img1');
+
+    setInterval(slider1, 3000);
+
+
+    function slider1() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+
+      imgss.innerHTML = "<img src=" + images[x - 1] + "  > ";
+
+
+    }
+
+
+</script>
+
+</body>
+</html>
